@@ -1,0 +1,16 @@
+#N canvas 587 210 561 490 12;
+#X obj 104 46 inlet~;
+#X obj 104 70 phasor~;
+#X obj 104 94 *~ 2045;
+#X obj 104 118 +~ 1;
+#X obj 104 166 outlet~;
+#X obj 104 142 tabread4~ \$1pulse;
+#X obj 207 47 inlet;
+#X msg 207 101 set \$1pulse;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;

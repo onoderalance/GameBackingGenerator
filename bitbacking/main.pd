@@ -1508,25 +1508,26 @@
 #X text 440 320 Comping:;
 #X text 357 364 Drums:;
 #X text 199 366 Melody:;
-#N canvas 847 153 572 479 rec 0;
-#X msg 181 186 start;
-#X msg 252 185 stop;
+#N canvas 847 153 572 479 rec 1;
+#X msg 178 232 start;
+#X msg 110 194 stop;
 #X obj 105 108 bng 15 250 50 0 empty empty Start: 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 105 130 bng 15 250 50 0 empty empty Stop: 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 20 184 catch~ rec;
 #X obj 71 378 writesf~ 2;
-#X obj 312 191 loadbang;
-#X msg 275 245 open rec.wav;
+#X msg 251 234 open rec.wav;
+#X obj 156 174 t b b;
 #X connect 0 0 5 0;
 #X connect 1 0 5 0;
-#X connect 2 0 0 0;
+#X connect 2 0 7 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
 #X connect 4 0 5 1;
-#X connect 6 0 7 0;
-#X connect 7 0 5 0;
+#X connect 6 0 5 0;
+#X connect 7 0 0 0;
+#X connect 7 1 6 0;
 #X coords 0 -1 1 1 60 50 2 100 100;
 #X restore 808 312 pd rec;
 #X text 813 289 Record:;

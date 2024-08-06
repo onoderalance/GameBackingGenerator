@@ -4,7 +4,7 @@
   ![Example Image](example.png)
 
 # Overview:
- GameBacking Generator is a simple jazz backing track consisting of percussion, bass, and harmony based on chord changes supplied through a text file. The sound is intended to emulate that of the original Game Boy, featuring pulse waves with adjustable duty cycles and a noise channel for the percussion. Optionally, this patch can also take samples for the comping or bass sounds instead of the pulse waves. In addition, there is support for MIDI input to play a monophonic melody line alongside the generated backing track. Rudimentary recording is implemented with writesf2~ to export .wav files of the generated backing tracks.
+ GameBacking Generator is a simple jazz backing track consisting of percussion, bass, and harmony (comping) based on chord changes supplied through a text file. The sound is intended to emulate that of the original Game Boy, featuring pulse waves with adjustable duty cycles and a noise channel for the percussion. Optionally, this patch can also take samples for the comping or bass sounds instead of the pulse waves. In addition, there is support for MIDI input to play a monophonic melody line alongside the generated backing track. Rudimentary recording is implemented with writesf2~ to export .wav files of the generated backing tracks.
 
 # Use:
  To test out the patch, open the project with the main.pd file. 

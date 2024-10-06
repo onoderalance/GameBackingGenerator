@@ -18,6 +18,7 @@
  - dim7: Diminished 7th
  - aug7: Augmented 7th
  - '6: 6th
+ 
  Durations are then input as an integer representing how many beats that chord will stay for. (e.g. Ab Major 7th for 4 beats would be represented as "Ab M7 4")
  Once a custom chord sheet has been created, simply add it to the /charts/ subdirectory, and add a message with the filename into the "input-reader" subpatch to the main trigger.
 

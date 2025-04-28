@@ -1,4 +1,4 @@
-#N canvas 0 25 1440 771 12;
+#N canvas 186 66 1440 771 12;
 #X obj 436 161 symbol-display;
 #N canvas 149 307 940 487 input-reader 0;
 #X obj 146 179 file-reader, f 23;
@@ -1530,10 +1530,23 @@
 #X coords 0 -1 1 1 60 50 2 100 100;
 #X restore 808 312 pd rec;
 #X text 813 289 Record:;
-#N canvas 63 88 450 300 midi-out 0;
+#N canvas 63 88 450 300 midi-out 1;
 #X obj 109 107 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X text 128 106 Output:;
+#X obj 242 197 noteout;
+#X obj 238 71 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 253 159 makenote;
+#X obj 248 124 unpack f f f;
+#X msg 244 101 60 90 500;
+#X connect 3 0 6 0;
+#X connect 4 0 2 0;
+#X connect 4 1 2 1;
+#X connect 5 0 4 0;
+#X connect 5 1 4 1;
+#X connect 5 2 4 2;
+#X connect 6 0 5 0;
 #X coords 0 -1 1 1 85 30 2 100 100;
 #X restore 713 330 pd midi-out;
 #X text 652 350 Bass:;

@@ -1,2 +1,1 @@
-$ cat .gitattributes
 *.pd linguist-detectable=true

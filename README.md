@@ -27,4 +27,8 @@
 # Sample Formatting:
  Samples are added into the /samples/ subdirectory. Formatting is optional, but to load the samples properly you must edit the read objects in the "loading-samples" subpatch under "pd guts". Do not forget to edit the reference pitch either!
 
-
+ # Recording & MIDI:
+  Recording generated backing tracks is possible in two ways: directly as a .wav file and indirectly through MIDI output. 
+  
+  The "Record" section of the main program will start recording all output audio on press of start, and end recording on stop. The .wav file is written directly as a "rec.wav" file in the main directory, so please copy them out or rename them if you plan on recording multiple times.
+  The "MIDI" section will instead output the bass and comping parts as MIDI output on two different channels (default 1 for bass and 2 for comping). Setting the output MIDI device to a bus (such as IAC Driver on Mac), will allow you to record and manipulate the MIDI data in an external DAW. As the MIDI output will not have the ADSR features of the program's audio output, it instead cuts off note input signals after 90% of the note duration for bass, and 99% for comping. These values are adjustable from the midi-out subpatch.
